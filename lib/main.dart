@@ -13,9 +13,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 240, 237, 237),
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Color.fromARGB(255, 255, 255, 255),
           actions: const [
             IconButton(icon: Icon(Icons.search), onPressed: null),
             IconButton(onPressed: null, icon: Icon(Icons.shopping_bag)),
@@ -91,7 +91,7 @@ class MainApp extends StatelessWidget {
                     CircleAvatar(
                       maxRadius: 30,
                       backgroundColor: Colors.white,
-                      backgroundImage: AssetImage('assets/storeperson.png'),
+                      backgroundImage: AssetImage('assets/applestoress.png'),
                     ),
                     Column(
                       children: [
@@ -151,7 +151,7 @@ class MainApp extends StatelessWidget {
                                 child: Image.asset(
                               imagePaths[index],
                               width: 200,
-                              height: 150,
+                              height: 100,
                             )),
                           ]),
                     );
@@ -159,11 +159,53 @@ class MainApp extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 100,
+                  height: 100,
+                  child: Text(
+                      'The Latest. take a look at whats new, right now.',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 25,
+                          wordSpacing: 0.01))),
+              Expanded(
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    List<String> imagePaths = [
+                      'assets/ipad-card-40-education-202108.jpeg',
+                      'assets/store-card-13-accessories-nav-202309.png',
+                      'assets/store-card-13-airpods-nav-202209.png',
+                      'assets/store-card-13-airtags-nav-202108.png',
+                      'assets/store-card-13-appletv-nav-202210.png',
+                      'assets/store-card-13-homepod-nav-202301.png',
+                      'assets/store-card-13-homepod-nav-202301.png',
+                      'assets/store-card-13-iphone-nav-202309_GEO_US.png',
+                      'assets/store-card-13-mac-nav-202310.png',
+                      'assets/store-card-13-vision-pro-nav-202401.png',
+                    ];
+                    return Container(
+                      padding: EdgeInsets.all(20.0),
+                      margin: EdgeInsets.all(16.0),
+                      width: 200,
+                      height: 300,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0)),
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Center(
+                                child: Image.asset(
+                              imagePaths[index],
+                              width: 200,
+                              height: 100,
+                            )),
+                          ]),
+                    );
+                  },
+                ),
               ),
-              SizedBox(
-                height: 200,
-              )
             ],
           ),
         ),
