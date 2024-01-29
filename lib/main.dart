@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
             IconButton(icon: Icon(Icons.search), onPressed: null),
             IconButton(onPressed: null, icon: Icon(Icons.shopping_bag)),
             IconButton(
-                onPressed: null, icon: Icon(Icons.hourglass_bottom_outlined)),
+                onPressed: null, icon: Icon(Icons.menu)),
           ],
           leading: Container(
             padding: const EdgeInsets.all(10.0),
