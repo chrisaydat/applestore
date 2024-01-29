@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(255, 240, 237, 237),
         appBar: AppBar(
           backgroundColor: Colors.white,
           actions: const [
@@ -137,11 +137,13 @@ class MainApp extends StatelessWidget {
                       'assets/store-card-13-vision-pro-nav-202401.png',
                     ];
                     return Container(
-                      padding: EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(20.0),
                       margin: EdgeInsets.all(16.0),
                       width: 200,
-                      height: 100,
-                      color: Colors.white, // Add styling as needed
+                      height: 300,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0)),
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -149,7 +151,7 @@ class MainApp extends StatelessWidget {
                                 child: Image.asset(
                               imagePaths[index],
                               width: 200,
-                              height: 60,
+                              height: 150,
                             )),
                           ]),
                     );
@@ -157,7 +159,7 @@ class MainApp extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 200,
+                height: 100,
               ),
               SizedBox(
                 height: 200,
