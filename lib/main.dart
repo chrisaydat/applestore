@@ -123,6 +123,18 @@ class MainApp extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
                   itemBuilder: (context, index) {
+                    List<String> imagePaths = [
+                      ''
+                      ''
+                      ''
+                      ''
+                      ''
+                      ''
+                      ''
+                      ''
+                      ''
+                      ''
+                    ];
                     return Container(
                       padding: EdgeInsets.all(16.0),
                       margin: EdgeInsets.all(16.0),
