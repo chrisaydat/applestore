@@ -55,7 +55,8 @@ class MainApp extends StatelessWidget {
                     CircleAvatar(
                       maxRadius: 30,
                       backgroundColor: Colors.white,
-                      backgroundImage: AssetImage('assets/store-card-50-specialist-help-202309.jpeg'),
+                      backgroundImage: AssetImage(
+                          'assets/store-card-50-specialist-help-202309.jpeg'),
                     ),
                     Column(
                       children: [
@@ -124,16 +125,16 @@ class MainApp extends StatelessWidget {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     List<String> imagePaths = [
-                      'assets/ipad-card-40-education-202108.jpeg'
-                      'assets/store-card-13-accessories-nav-202309.png'
-                      'assets/store-card-13-airpods-nav-202209.png'
-                      'assets/store-card-13-airtags-nav-202108.png'
-                      'assets/store-card-13-appletv-nav-202210.png'
-                      'assets/store-card-13-homepod-nav-202301.png'
-                      'assets/store-card-13-homepod-nav-202301.png'
-                      'assets/store-card-13-iphone-nav-202309_GEO_US.png'
-                      'assets/store-card-13-mac-nav-202310.png'
-                      'assets/store-card-13-vision-pro-nav-202401.png'
+                      'assets/ipad-card-40-education-202108.jpeg',
+                      'assets/store-card-13-accessories-nav-202309.png',
+                      'assets/store-card-13-airpods-nav-202209.png',
+                      'assets/store-card-13-airtags-nav-202108.png',
+                      'assets/store-card-13-appletv-nav-202210.png',
+                      'assets/store-card-13-homepod-nav-202301.png',
+                      'assets/store-card-13-homepod-nav-202301.png',
+                      'assets/store-card-13-iphone-nav-202309_GEO_US.png',
+                      'assets/store-card-13-mac-nav-202310.png',
+                      'assets/store-card-13-vision-pro-nav-202401.png',
                     ];
                     return Container(
                       padding: EdgeInsets.all(16.0),
