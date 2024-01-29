@@ -121,26 +121,34 @@ class MainApp extends StatelessWidget {
               Expanded(
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: 10, 
+                  itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
                       padding: EdgeInsets.all(16.0),
                       margin: EdgeInsets.all(16.0),
                       width: 200,
-                      height: 100, 
-                      color: Colors.black, // Add styling as needed
-                      child: Center(
-                        child: Text('Item $index',
-                            style: TextStyle(color: Colors.white)),
-                      ),
+                      height: 100,
+                      color: Colors.white, // Add styling as needed
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Center(
+                                child: Image.asset(
+                              'assets/storeperson.png',
+                              width: 200,
+                              height: 60,
+                            )),
+                          ]),
                     );
                   },
                 ),
               ),
               SizedBox(
-                height: 200,),
-                SizedBox(height: 200,)
-
+                height: 200,
+              ),
+              SizedBox(
+                height: 200,
+              )
             ],
           ),
         ),
