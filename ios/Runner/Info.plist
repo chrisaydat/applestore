@@ -45,5 +45,11 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIAppFonts</key>
+<array>
+    <string>fonts/SF-Pro-Text-Bold.otf</string>
+    <string>fonts/SF-Pro-Text-Regular.otf</string>
+</array>
+
 </dict>
 </plist>

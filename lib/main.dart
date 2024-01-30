@@ -19,8 +19,7 @@ class MainApp extends StatelessWidget {
           actions: const [
             IconButton(icon: Icon(Icons.search), onPressed: null),
             IconButton(onPressed: null, icon: Icon(Icons.shopping_bag)),
-            IconButton(
-                onPressed: null, icon: Icon(Icons.menu)),
+            IconButton(onPressed: null, icon: Icon(Icons.menu)),
           ],
           leading: Container(
             padding: const EdgeInsets.all(10.0),
@@ -42,6 +41,7 @@ class MainApp extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w600,
+                  fontFamily: 'SFPro',
                   fontSize: 28,
                 ),
               ),
